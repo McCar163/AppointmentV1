@@ -1,4 +1,7 @@
 <?php
+/**
+* Open a connection via PDO to create a new database and table with
+ */
 require "config.php";
 try {
 $connection = new PDO("mysql:host=$host", $username, $password,
@@ -9,13 +12,3 @@ echo "Database and table users created successfully.";
 } catch(PDOException $error) {
 echo $sql . "<br>" . $error->getMessage();
 }
-
-if (isset($_POST['submit'])) {
-    require "../config.php";
-    try {
-    $connection = new PDO($dsn, $username, $password, $options);
-    // insert new user code will go here
-    } catch(PDOException $error) {
-    echo $sql . "<br>" . $error->getMessage();
-    }
-    }

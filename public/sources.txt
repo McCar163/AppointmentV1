@@ -1,0 +1,1 @@
+(create.php, delete.php, index.php, read.php, update.php, update-singld.php, style.css, footer.php, header.php) base files from "Build a no-frills PHP CRUD App with routing.
